@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h2>Job Application Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data" >
+        <label for="fullname">FullName:</label>
+        <br>
+        <!-- <input type="text" name="fullname" id="email" placeholder="fullname" minlength="3" maxlength="10"> -->
+        <input type="text" name="fullname" id="fullname" placeholder="fullname" minlength="3" maxlength="20">
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <!-- <input type="email" name="name" id="fullname" placeholder="abc@gmail.com" required> -->
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        <br>
+        <br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" name="pass" id="
+        password"placeholder="" required minlength="8" maxlength="20">
+        <br>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <br>
+        <input type="tel" name="ph" id="phone" required placeholder="7854*">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" name="age" id="age" required min="18" max="40" placeholder="20">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" required>
+        <br>
+        <br>
+
+        <label for="rate">Rate Yourself:</label>
+        <br>
+        <input type="range" name="rating" id="rate" step="2" min="0" max="10" value="">
+        <br>
+        <br>
+
+        <label for="resume">Upload Resume:</label>
+        <br>
+        <input type="file" name="resume" id="resume" required accept=".pdf, .docx, .doc" multiple >
+        <br>
+        <br>
+
+        <label>Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="famale" required>
+
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others" value="others" required>
+
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country" required>
+            <option value="INDIA">
+                INDIA
+            </option>
+            <option value="USA">
+                United States
+            </option>
+            <option value="JAPAN">
+                Japan
+            </option>
+        </select>
+        <br><br>
+
+        <label for="skill">Skill:</label>
+        <input type="text" list="skills" id="skill" name="skill" placeholder="Type">
+        <datalist id="skills">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JAVASCRIPT"></option>
+            <option value="PYTHON"></option>
+            <option value="JAVA"></option>
+        </datalist>
+
+        <br>
+        <br>
+
+        <label for="terms"></label>
+        <input type="checkbox" name="terms" id="terms" required> I agree to the terms and conditions
+
+        
+        <!--<input type="button" value="Submit">-->
+        <!-- <input type="submit" value="submit"> -->
+        <br><br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
