@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,  sans-serif;
+}
+.title-bar{
+    background-color: aqua;
+    color:deeppink;
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+
+}
+.MY LOGO{
+    font-size: 100px;
+    font-weight: bold;
+}
+.nav-links a{
+    color:blueviolet;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: yellowgreen;
+}
+main{
+    padding: 40px 20px;
+}
+h1{
+    background-color: hotpink;
+    color: crimson;
+}
+p{
+    color: deepskyblue;
+}

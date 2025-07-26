@@ -1,0 +1,40 @@
+*{
+    background-color: bisque;
+}
+.btn-primary{
+    background-color: blue;
+
+}
+.btn-secondary{
+    background-color: grey;
+    
+}
+.btn-success{
+    background-color: green;
+}
+.btn-danger{
+    background-color: red;
+}
+.btn-warning{
+    background-color: yellow;
+}
+.btn-info{
+    background-color: skyblue;
+}
+.btn-light{
+    background-color: white;
+}
+.btn-dark{
+    background-color: black;
+    color:white;
+}
+.btn-link{
+    background-color: transparent;
+    color:blue;
+    text-decoration: underline;
+    padding:0;
+    border:none;
+
+
+}
+

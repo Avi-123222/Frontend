@@ -1,0 +1,12 @@
+.one{
+    background-color: aquamarine;
+    max-width: 500px; 
+    /* width:500px */
+     min-width: 300px;
+     /* width:50%; */
+     /* height:50%;  */
+}
+.parent{
+    width:800px;
+    /* height: 400px; */
+}
