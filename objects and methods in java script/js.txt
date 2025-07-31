@@ -1,0 +1,4 @@
+objects {
+    key :values;
+    key2 :values;
+}object literals 
