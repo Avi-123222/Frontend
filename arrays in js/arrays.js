@@ -200,3 +200,28 @@ let isEveryOdds = odd.every(num => num % 2 !== 0)
 console.log(isEveryOdds)
 
 //find()
+const numbers = [3, 7, 11, 14, 21];
+
+const firstEven = numbers.find(num => num % 2 === 0)
+ 
+console.log("First even number:", firstEven);
+
+//findIndex()
+const number = [3, 7, 11, 14, 21];
+
+const findnumber = numbers.findIndex(num => num % 2 === 0)
+ 
+console.log("First even number:",findnumber);
+
+
+
+//join()
+const fruit = ['apple', 'banana', 'mango'];
+const results = fruit.join("");
+
+console.log(results);
+
+const b = ['H', 'e', 'l','l','o'];
+const r = b.join("");
+
+console.log(r);
