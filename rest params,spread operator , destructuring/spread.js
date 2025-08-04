@@ -43,10 +43,23 @@ console.log(arr4)
 //-------------------------------------------------------------------------------
 const user = {
     name:'Avishek',
-    age:24
+    age:24,
+    address:{
+        state:'Odisha',
+        pin:751007
+    }
 }
-const copied = {...user,city:'Cuttack'}
+const copied = {...user}
 //console.log(copied)
 // Object.assign()
 // console.log(user)
 // console.log(copied)
+
+copied.address.state = "Jharkhand"
+console.log(user)
+console.log(copied)
+//shallow
+
+
+///Deep copy
+//json.parse(),json.stringifly()
