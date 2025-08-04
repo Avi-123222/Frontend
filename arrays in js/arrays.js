@@ -200,7 +200,7 @@ let isEveryOdds = odd.every(num => num % 2 !== 0)
 console.log(isEveryOdds)
 
 //find()
-const numbers = [3, 7, 11, 14, 21];
+const numbers = [3, 7, 11, 14, 21, 16];
 
 const firstEven = numbers.find(num => num % 2 === 0)
  
