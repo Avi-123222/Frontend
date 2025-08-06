@@ -86,6 +86,7 @@ console.log(fruitstr ,"->",fruitsArr )
 
 
 const s = 'we are developers'
+const b = 23
 console.log(s.length)
 console.log(s.slice())
 console.log(s.substring())
@@ -117,6 +118,14 @@ console.log(s.substring(-6,2))// substring(0,2)
 
 console.log(s.slice(2,-6))//slice(2,11)
 console.log(s.substring(2,-6))//=.substring(2,-6)=>substring(2,11)
+
+console.log(s.substring(2,16))
+console.log(b.toString())
+console.log(b.valueOf())
+
+
+
+
 
 
 
