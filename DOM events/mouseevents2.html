@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changing Square</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #square {
+            width: 150px;
+            height: 150px;
+            background-color: whitesmoke;
+            margin: 0 auto 20px auto;
+            transition: background-color 0.3s ease;
+        }
+
+        #changeColorBtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="square"></div> 
+    <button id="changeColorBtn">Change Color</button>
+
+    <script>
+        // Get references to DOM elements
+        const square = document.getElementById('square');
+        const button = document.getElementById('changeColorBtn');
+
+        // Function to generate a random RGB color
+        function getRandomColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            return `rgb(${r}, ${g}, ${b})`;
+        }
+
+        // Add mouse click event listener to the button
+        button.addEventListener('click', function() {
+            square.style.backgroundColor = getRandomColor();
+        });
+    </script>
+
+</body>
+</html>
