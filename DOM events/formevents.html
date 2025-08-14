@@ -14,10 +14,23 @@
 <body>
     <form action="/form-submit">
         <input type="text" placeholder="enter usernsme">
+        <br><br>
+        <label>
+            Choose an ice cream flavour 
+            <select class ="ice-cream" name="flavour">
+
+                <option value="">Select one</option>
+                <option value="butterscotch">Butter Scotch</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="chocolate">Chocolate</option>
+                
+
+            </select>
+        </label>
         <button type="submit">click</button>
     </form>
     <script>
-        const form = document.querySelector('form')
+        //const form = document.querySelector('form')
         //form.addEventListener('submit',(e) => {
             //e.preventDefault()
            // console.log('submit event occured')
@@ -30,13 +43,39 @@
        // })
              //=======================================
              const input = document.querySelector('input')
-             input.addEventListener('focus',() => {
+            input.addEventListener('focus',() => {
                 console.log("focus in input field")
              })
              input.addEventListener('blur',() => {
                 console.log("focus removed from input field")
              })
+             input.addEventListener('input',(e) => {
+                //console.log("focus removed from input field")
+                console.log(e.target.value)
+             })
+             input.addEventListener('change',(e) => {
+                console.log("change event is occured")
+                console.log(e.target.value)
+             })
+             //===================14.08.2025=================//
+             const selectElement = document.querySelector('.ice-cream')
+               selectElement.addEventListener('change', (e) => {
+            console.log("change event occured")
+            // console.log(e)
+            console.log(e.type, e.target.value)
+        })
+
+             const frm = document.querySelector('form')
+             frm.addEventListener('submit',(e)=>{
+                e.preventDefault()
+                const formData = new FormData(frm)
+                console.log('formData', formData)
+                for(const [key,value] of formData.entries()){
+                    console.log(`${key}:${value}`)
+                
+             }
         
+             })
     </script>
     
 </body>
